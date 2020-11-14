@@ -1,7 +1,7 @@
 # VPS-Easy-Setup
 #  版权为各位大佬所有 个人整合方便自用
 
-#使用方法：  
+# 使用方法：  
   
 wget -O ezsetup.sh --no-check-certificate https://searchforyou.me/ezsetup.sh && bash ezsetup.sh  
 
