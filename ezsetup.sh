@@ -36,7 +36,7 @@ source /etc/os-release
 ${INS} install curl vim -y
 
 
-    echo -e "\t ${Green}MP脚本整合${Font}"
+    echo -e "\t ${Green}Linux脚本整合${Font}"
     echo -e "\t---Combined by Mark---"
     echo -e "\thttps://github.com/MarkPetrol"
 
@@ -58,12 +58,14 @@ ${INS} install curl vim -y
     echo -e "${Green}16.${Font} LemonBench"
     echo -e "${Green}17.${Font} 回程路由"
 	echo -e "${Green}18.${Font} 回程路由(nanqinlang)"
-    echo -e "${Green}19.${Font} 安装wulabing V2脚本"
-	echo -e "${Green}20.${Font} 重启V2"
-	echo -e "${Green}21.${Font} 重启Nginx"
-	echo -e "${Green}22.${Font} 安装Trojan脚本"
-	echo -e "${Green}23.${Font} 安装iptables转发（natcfg）"
-
+	echo -e "${Green}19.${Font} 回程路由(Jiuqi)"
+    echo -e "${Green}20.${Font} 安装wulabing V2脚本"
+	echo -e "${Green}21.${Font} 重启V2"
+	echo -e "${Green}22.${Font} 重启Nginx"
+	echo -e "${Green}23.${Font} 安装Trojan脚本"
+	echo -e "${Green}24.${Font} 安装iptables转发（natcfg）"
+    echo -e "${Green}25.${Font} 安装dnsmasq解锁"
+	
     sleep 1
 	read -rp "请输入数字：" menu_num
     case $menu_num in
@@ -122,20 +124,27 @@ ${INS} install curl vim -y
         wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && bash testrace.sh
         ;;
 	19)
-        bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
+        bash <(curl -sL mcnb.top/besttcp.sh)
         ;;
 	20)
-        systemctl restart v2ray
+        bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
         ;;
 	21)
-        systemctl restart nginx
+        systemctl restart v2ray
         ;;
 	22)
-        bash <(curl -s -L https://github.com/V2RaySSR/Trojan/raw/master/Trojan.sh)
+        systemctl restart nginx
         ;;
 	23)
+        bash <(curl -s -L https://github.com/V2RaySSR/Trojan/raw/master/Trojan.sh)
+        ;;
+	24)
         wget -qO natcfg.sh https://searchforyou.me/natcfg.sh && bash natcfg.sh
         ;;
+	25）
+	    wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
+		;;
+		
     *)
         echo -e "${RedBG}请输入正确的数字${Font}"
         ;;
