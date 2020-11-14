@@ -9,7 +9,7 @@ wget -O ezsetup.sh https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/m
 
 # 运行效果  
   
- Linux脚本整合
+ Linux脚本整合  
 	---Combined by Mark---  
 	https://github.com/MarkPetrol
 1.  使用最新BBr脚本
