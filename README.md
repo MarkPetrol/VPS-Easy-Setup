@@ -1,7 +1,9 @@
 # VPS-Easy-Setup
 
-#使用方法：
+#使用方法：  
+  
 wget -O ezsetup.sh --no-check-certificate https://searchforyou.me/ezsetup.sh && bash ezsetup.sh  
+  
 wget -O ezsetup.sh https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/main/ezsetup.sh?token=AQSXPEKPLAFJTC3XBEWLL4K7V5P5G && bash ezsetup.sh
 
 MP脚本整合  
