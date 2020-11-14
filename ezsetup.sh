@@ -141,7 +141,7 @@ ${INS} install curl vim -y
 	24)
         wget -qO natcfg.sh https://searchforyou.me/natcfg.sh && bash natcfg.sh
         ;;
-	25）
+	25)
 	    wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 		;;
 		
