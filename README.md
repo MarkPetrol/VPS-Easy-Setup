@@ -7,6 +7,8 @@ wget -O ezsetup.sh --no-check-certificate https://searchforyou.me/ezsetup.sh && 
 
 wget -O ezsetup.sh https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/main/ezsetup.sh && bash ezsetup.sh  
 
+# 运行效果  
+  
  Linux脚本整合
 	---Combined by Mark---  
 	https://github.com/MarkPetrol
