@@ -1,4 +1,5 @@
 # VPS-Easy-Setup
+#  版权为各位大佬所有 个人整合方便自用
 
 #使用方法：  
   
@@ -33,5 +34,5 @@ wget -O ezsetup.sh https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/m
 22. 重启Nginx
 23. 安装Trojan脚本
 24. 安装iptables转发（natcfg）
-25. 安装dnsmasq解锁
+25. 安装dnsmasq解锁  
 请输入数字：
