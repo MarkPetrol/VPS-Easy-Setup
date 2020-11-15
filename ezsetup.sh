@@ -94,10 +94,10 @@ ${INS} install curl vim -y
         bash <(curl -Lso- https://searchforyou.me/rsa.sh)
         ;;
     9)
-        wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
+        wget -N https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
         ;;
     10)
-        wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh s
+        wget -N https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh s
         ;;
     11)
         wget https://searchforyou.me/mtproxy.sh && bash mtproxy.sh
