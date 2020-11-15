@@ -48,8 +48,8 @@ ${INS} install curl vim -y
     echo -e "${Green}6.${Font}  GoogleDrive源DD脚本"
     echo -e "${Green}7.${Font}  修改DNS"
 	echo -e "${Green}8.${Font}  修改密钥登陆"
-    echo -e "${Green}9.${Font}  探针服务端"
-    echo -e "${Green}10.${Font} 探针客户端"
+    echo -e "${Green}9.${Font}  探针客户端"
+    echo -e "${Green}10.${Font} 探针服务端"
     echo -e "${Green}11.${Font} 安装 MTProxy(TLS)"
     echo -e "${Green}12.${Font} 添加Swap（@萌鼠）"
     echo -e "${Green}13.${Font} 添加Swap（上面用不了再用这个）"
@@ -88,29 +88,29 @@ ${INS} install curl vim -y
         wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
         ;;
     7)
-        wget -qO- https://get.docker.com/ | bash
-        ;;
-    8)
         vim /etc/resolv.conf
         ;;
-    9)
+    8)
         bash <(curl -Lso- https://searchforyou.me/rsa.sh)
+        ;;
+    9)
+        wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
         ;;
     10)
         wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh s
         ;;
     11)
-        wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
-        ;;
-    12)
         wget https://searchforyou.me/mtproxy.sh && bash mtproxy.sh
         ;;
-    13)
+    12)
         wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
         ;;
-    14)
+    13)
         wget -qO- --no-check-certificate https://searchforyou.me/addswap.sh | bash
         ;;
+	14)
+        wget -qO- https://get.docker.com/ | bash
+        ;;	
     15)
         wget -qO- https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
         ;;
