@@ -24,8 +24,8 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkP
 6.  GoogleDrive源DD脚本
 7.  修改DNS
 8.  修改密钥登陆
-9.  探针服务端
-10. 探针客户端
+9.  探针客户端
+10. 探针服务端
 11. 安装 MTProxy(TLS)
 12. 添加Swap（@萌鼠）
 13. 添加Swap（上面用不了再用这个）
