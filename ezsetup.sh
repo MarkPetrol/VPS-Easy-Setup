@@ -65,6 +65,8 @@ ${INS} install curl vim -y
 	echo -e "${Green}23.${Font} 安装Trojan脚本"
 	echo -e "${Green}24.${Font} 安装iptables转发（natcfg）"
     echo -e "${Green}25.${Font} 安装dnsmasq解锁"
+	echo -e "${Green}26.${Font} 安装Fail2ban"
+	echo -e "${Green}27.${Font} 卸载Fail2ban"
 	
     sleep 1
 	read -rp "请输入数字：" menu_num
@@ -144,6 +146,12 @@ ${INS} install curl vim -y
 	25)
 	    wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 		;;
+	26)
+	    wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
+		;;	
+	27)
+	    wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/uninstall.sh && bash uninstall.sh
+		;;	
 		
     *)
         echo -e "${RedBG}请输入正确的数字${Font}"
