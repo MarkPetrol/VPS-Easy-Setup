@@ -39,7 +39,7 @@ if command -v curl >> /dev/null 2>&1;
   then
     echo -e "${GreenBG} curl已安装 ${Font}"
   else
-    echo "curl未被安装，正在进行安装"
+    echo -e "${RedBG} curl未被安装，正在进行安装 ${Font}"
     ${INS} install -y curl >> /dev/null 2>&1
   fi
   
@@ -47,7 +47,7 @@ if command -v vim >> /dev/null 2>&1;
   then
     echo -e "${GreenBG} vim已安装 ${Font}"
   else
-    echo "vim未被安装，正在进行安装"
+    echo -e "${RedBG} vim未被安装，正在进行安装 ${Font}"
     ${INS} install -y vim >> /dev/null 2>&1
   fi
 
