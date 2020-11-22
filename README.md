@@ -41,4 +41,6 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkP
 23. 安装Trojan脚本
 24. 安装iptables转发（natcfg）
 25. 安装dnsmasq解锁  
+26. 安装Fail2ban  
+27. 卸载Fail2ban  
 请输入数字：
