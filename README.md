@@ -43,5 +43,5 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkP
 25. 安装dnsmasq解锁  
 26. 安装Fail2ban  
 27. 卸载Fail2ban  
-28. Superbench超多测速点版
+28. SuperBench超多测速点版
 请输入数字：
