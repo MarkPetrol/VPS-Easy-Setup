@@ -30,7 +30,7 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkP
 12. 添加Swap（@萌鼠）
 13. 添加Swap（上面用不了再用这个）
 14. 一键安装Docker测试版
-15. SuperBench
+15. SuperBench修复版-yzlijie
 16. LemonBench
 17. 回程路由
 18. 回程路由(nanqinlang)
@@ -43,4 +43,5 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkP
 25. 安装dnsmasq解锁  
 26. 安装Fail2ban  
 27. 卸载Fail2ban  
+28. Superbench超多测速点版
 请输入数字：
