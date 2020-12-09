@@ -70,7 +70,7 @@ if command -v vim >> /dev/null 2>&1;
     echo -e "${Green}12.${Font} 添加Swap（@萌鼠）"
     echo -e "${Green}13.${Font} 添加Swap（上面用不了再用这个）"
 	echo -e "${Green}14.${Font} 一键安装Docker测试版"
-    echo -e "${Green}15.${Font} SuperBench"
+    echo -e "${Green}15.${Font} SuperBench修复版-yzlijie"
     echo -e "${Green}16.${Font} LemonBench"
     echo -e "${Green}17.${Font} 回程路由"
 	echo -e "${Green}18.${Font} 回程路由(nanqinlang)"
@@ -83,6 +83,7 @@ if command -v vim >> /dev/null 2>&1;
     echo -e "${Green}25.${Font} 安装dnsmasq解锁"
 	echo -e "${Green}26.${Font} 安装Fail2ban"
 	echo -e "${Green}27.${Font} 卸载Fail2ban"
+	echo -e "${Green}28.${Font} Superbench超多测速点版"
 	
     sleep 1
 	read -rp "请输入数字：" menu_num
@@ -130,7 +131,7 @@ if command -v vim >> /dev/null 2>&1;
         wget -qO- https://get.docker.com/ | bash
         ;;	
     15)
-        wget -qO- https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+        wget -N -O superbench.sh --no-check-certificate https://raw.githubusercontent.com/yzlijie/SPDTST/e971a137a6ca698162a54234b762d28fd9ee9991/superbench.sh && bash superbench.sh
         ;;
     16)
         curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
@@ -168,6 +169,9 @@ if command -v vim >> /dev/null 2>&1;
 	27)
 	    wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/uninstall.sh && bash uninstall.sh
 		;;	
+	28)
+	    wget -N -O superbench2.sh --no-check-certificate https://raw.githubusercontent.com/zzycwmx/CDN/master/superbench2.sh && bash superbench2.sh
+		;;
 		
     *)
         echo -e "${RedBG}请输入正确的数字${Font}"
