@@ -3,11 +3,11 @@
 
 # 使用方法：  
   
-wget -O ezsetup.sh --no-check-certificate https://searchforyou.me/ezsetup.sh && bash ezsetup.sh  
+wget -O ezsetup.sh --no-check-certificate https://search.xn--1l6ama.tk/ezsetup.sh && bash ezsetup.sh  
 
 wget -O ezsetup.sh https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/main/ezsetup.sh && bash ezsetup.sh  
 
-bash <(wget --no-check-certificate -qO- 'https://searchforyou.me/ezsetup.sh')  
+bash <(wget --no-check-certificate -qO- 'https://search.xn--1l6ama.tk/ezsetup.sh')  
 
 bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MarkPetrol/VPS-Easy-Setup/main/ezsetup.sh')
 
