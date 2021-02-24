@@ -89,7 +89,7 @@ if command -v vim >> /dev/null 2>&1;
 	read -rp "请输入数字：" menu_num
     case $menu_num in
     1)
-        wget -N --no-check-certificate "https://searchforyou.me/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+        wget -N --no-check-certificate "https://search.xn--1l6ama.tk/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
         ;;
     2)
         bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/caippx/bash/master/vvr/vvr.bash')
@@ -110,7 +110,7 @@ if command -v vim >> /dev/null 2>&1;
         vim /etc/resolv.conf
         ;;
     8)
-        bash <(curl -Lso- https://searchforyou.me/rsa.sh)
+        bash <(curl -Lso- https://search.xn--1l6ama.tk/rsa.sh)
         ;;
     9)
         wget -N https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh c
@@ -119,13 +119,13 @@ if command -v vim >> /dev/null 2>&1;
         wget -N https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh && bash status.sh s
         ;;
     11)
-        wget https://searchforyou.me/mtproxy.sh && bash mtproxy.sh
+        wget https://search.xn--1l6ama.tk/mtproxy.sh && bash mtproxy.sh
         ;;
     12)
         wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
         ;;
     13)
-        wget -qO- --no-check-certificate https://searchforyou.me/addswap.sh | bash
+        wget -qO- --no-check-certificate https://search.xn--1l6ama.tk/addswap.sh | bash
         ;;
 	14)
         wget -qO- https://get.docker.com/ | bash
@@ -158,7 +158,7 @@ if command -v vim >> /dev/null 2>&1;
         bash <(curl -s -L https://github.com/V2RaySSR/Trojan/raw/master/Trojan.sh)
         ;;
 	24)
-        wget -qO natcfg.sh https://searchforyou.me/natcfg.sh && bash natcfg.sh
+        wget -qO natcfg.sh https://search.xn--1l6ama.tk/natcfg.sh && bash natcfg.sh
         ;;
 	25)
 	    wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
