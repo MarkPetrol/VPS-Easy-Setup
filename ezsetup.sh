@@ -143,7 +143,7 @@ if command -v vim >> /dev/null 2>&1;
         wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && bash testrace.sh
         ;;
 	19)
-        bash <(curl -sL mcnb.top/besttcp.sh)
+        bash -c "$(curl -L mcnb.top/route.sh)"
         ;;
 	20)
         bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
