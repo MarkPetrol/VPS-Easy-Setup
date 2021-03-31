@@ -89,7 +89,7 @@ if command -v vim >> /dev/null 2>&1;
 	read -rp "请输入数字：" menu_num
     case $menu_num in
     1)
-        wget -N --no-check-certificate "https://search.xn--1l6ama.tk/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+        wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
         ;;
     2)
         bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/caippx/bash/master/vvr/vvr.bash')
